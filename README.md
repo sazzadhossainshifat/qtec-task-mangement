@@ -79,10 +79,3 @@ To run the tests:
 ```bash
 php artisan test
 ```
-
-## Assumptions & Decisions
-
-- **Bootstrap + Tailwind**: Used Bootstrap for the core grid and standard components (navbar, cards, forms) while leveraging Tailwind for fine-tuned utility styling and color consistency.
-- **Minimal Dependencies**: Kept the JavaScript footprint small by using Vanilla JS for the AJAX status toggle instead of bringing in a heavy framework like Vue or React for a simple requirement.
-- **Security**: Implemented standard Laravel authorization checks in the `TaskController` to prevent unauthorized access to tasks by ID.
-- **UX**: Added a "Danger Zone" in the edit view to prevent accidental deletions and used a progress bar on the dashboard for quick visual feedback.
